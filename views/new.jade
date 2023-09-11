@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+  header(class="text-center p-2") 
+    h1 Message Board 
+  main(class="p-3 flex-grow-1 bg-secondary")
+    h2 Write Post 
+    form(action="/new", method="POST")
+      label(for="username") Username:
+      input(type="text", id="username", name="username", required="true")
+      br
+      label(for="postContent") Message:
+      textarea(rows="10" cols="50" required="true", id="postContent", name="postContent")
+      br
+      button(type="submit") Send
