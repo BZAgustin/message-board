@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/new', function(req, res, next) {
-  res.render('new', {title: 'New Post'})
+  res.render('new', {title: 'New Post'});
 });
 
 router.post('/new', function(req, res, next) {
