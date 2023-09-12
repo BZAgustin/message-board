@@ -2,14 +2,19 @@ extends layout
 
 block content 
   header(class="text-center p-2") 
-    h1 Message Board 
-  main(class="p-3 flex-grow-1 bg-secondary")
-    h2 Write Post 
-    form(action="/new", method="POST")
-      label(for="username") Username:
-      input(type="text", id="username", name="username", required="true")
+    h1 Old School Message Board 
+  main(class="p-3 d-flex justify-content-center align-items-center flex-grow-1 flex-column bg-secondary")
+    form(action="/new", method="POST" id="postForm" class="card p-3 d-flex justify-content-space-between align-items-center flex-column bg-info w-50")
+      h2(class="text-center text-light") New Message
+      div(class="input-group mb-3 w-75")
+        div(class="input-group-prepend")
+          <span class="input-group-text" id="basic-addon1">@</span>
+        input(type="text", class="form-control", placeholder="Username" id="username", name="username", required="true")
       br
-      label(for="postContent") Message:
-      textarea(rows="10" cols="50" required="true", id="postContent", name="postContent")
+      div(class="input-group mb-3")
+        div(class="input-group-prepend")
+          <span class="input-group-text" id="basic-addon1">#</span>
+        input(type="text", class="form-control", placeholder="Message", id="postContent", name="postContent", required="true")
+
       br
-      button(type="submit") Send
+      button(type="submit" class="btn btn-info") Send
