@@ -1,6 +1,7 @@
 /* eslint-disable prefer-arrow-callback */
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+
+const router = express.Router();
 
 const messages = [
    {
