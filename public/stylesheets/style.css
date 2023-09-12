@@ -1,8 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-bottom: 36px;
+  background: rgb(130,132,175);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(168, 194, 204) 100%);
 }
 
 a {
-  color: #00B7FF;
+  color: #ffffff !important;
+}
+
+a:hover {
+  color: lightgray;
+  text-decoration: none !important;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.bg-secondary {
+  background-color: rgb(133, 167, 168) !important;
+}
+
+main {
+  box-shadow: 1px 3px 10px rgb(31, 31, 31);
+}
+
+#postForm {
+  border-radius: 10px;
+  border: solid 1px rgb(102, 102, 102);
+  background: rgb(29,29,29);
+  background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(74,82,81,1) 100%);
 }
